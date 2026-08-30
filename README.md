@@ -49,3 +49,4 @@ Find the latest documentation on using **DX Component Builder** [here](https://d
 
 | Component | Type | Description |
 |-----------|------|-------------|
+| [PIIRedactor](src/components/Virtusa_ClaudeDXComponents_PIIRedactor) | Field (Text) | Redacted display of card numbers, SSNs, phone, email, and generic values, with a masked-input edit mode |
