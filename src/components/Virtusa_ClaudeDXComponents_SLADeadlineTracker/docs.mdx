@@ -1,0 +1,32 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import * as SLADeadlineTrackerStories from './demo.stories';
+
+<Meta of={SLADeadlineTrackerStories} />
+
+# SLA & Deadline Tracker
+
+## Overview
+A landing-page dashboard widget that shows live SLA/deadline status across active cases — one card per case/SLA pulled from a data page, each with a circular "% used" ring, remaining/overdue time, due date, and a linear progress bar. A summary bar totals cases by status.
+
+## When to use
+Add this widget to a landing page (Channels → Landing pages → Edit landing page) when you want an at-a-glance operational view of SLA health across many cases — e.g. a supervisor dashboard.
+
+## Props
+
+| Prop | Type | Required | Default | Description |
+|------|------|----------|---------|-------------|
+| `heading` | Text | No | `SLA & Deadline Tracker` | Widget heading |
+| `description` | Text | No | `Live SLA status across active cases` | Widget subheading |
+| `dataPage` | Text | Yes | `slatracker_datapage` | Data page returning rows: `caseID`, `insKey` (pzInsKey), `caseClassName` (pxObjClass), `slaType`, `status` (`On Track` \| `At Risk` \| `Overdue`), `percentUsed` (0–100), `dueDateTime` (ISO datetime) |
+
+The data page decides business status (`status`) — the component only renders it and computes display formatting (remaining/overdue duration, due date) from `dueDateTime`. Clicking a case ID opens that case in place via `getActionsApi().openWorkByHandle` (cmd/ctrl+click opens it in a new tab instead), which is why `insKey` and `caseClassName` are required, not just the display `caseID`.
+
+## Visual states
+- **Default** — a mix of On Track, At Risk, and Overdue cases
+- **AllOnTrack** — every card in the same status
+- **ManyRows** — more cards than fit one row, demonstrating dynamic wrapping (no fixed cap)
+- **Empty** — no active cases returned by the data page
+
+<Canvas>
+  <Story of={SLADeadlineTrackerStories.Default} />
+</Canvas>
