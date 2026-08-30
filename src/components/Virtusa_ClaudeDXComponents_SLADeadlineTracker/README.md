@@ -7,6 +7,12 @@
 ## Overview
 A landing-page dashboard widget that shows live SLA/deadline status across active cases — one card per case/SLA pulled from a data page, each with a circular "% used" ring, remaining/overdue time, due date, and a linear progress bar. A summary bar totals cases by status. Clicking a case ID opens that case in place (cmd/ctrl+click opens it in a new tab).
 
+## Screenshots
+
+![SLA Deadline Tracker](./sla-deadline-tracker-pega.jpg)
+
+![SLA Deadline Tracker](./slatracker.png)
+
 ## When to use
 Add this widget to a landing page (Channels → Landing pages → Edit landing page) when you want an at-a-glance operational view of SLA health across many cases — e.g. a supervisor dashboard.
 
