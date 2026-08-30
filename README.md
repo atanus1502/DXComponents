@@ -1,6 +1,6 @@
 # Using Custom Components in Constellation
 
-> Components in this repo were built with [Claude Code](https://claude.com/claude-code) — from scaffolding via the DX Component Builder CLI through implementation, Storybook review, and publishing to Pega Infinity.
+> Components in this repo were built with **Claude Code** — from scaffolding via the DX Component Builder CLI through implementation, Storybook review, and publishing to Pega Infinity.
 
 ## Overview
 
