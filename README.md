@@ -49,3 +49,4 @@ Find the latest documentation on using **DX Component Builder** [here](https://d
 
 | Component | Type | Description |
 |-----------|------|-------------|
+| [CaseSummaryWidget](src/components/Virtusa_ClaudeDXComponents_CaseSummaryWidget) | Widget (CASE) | Displays case ID, status, customer name, and last-updated timestamp |
