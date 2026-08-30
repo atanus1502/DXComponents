@@ -1,5 +1,7 @@
 # Using Custom Components in Constellation
 
+> Components in this repo were built with [Claude Code](https://claude.com/claude-code) — from scaffolding via the DX Component Builder CLI through implementation, Storybook review, and publishing to Pega Infinity.
+
 ## Overview
 
 This project provides you with an environment to extend Constellation by giving you tools to create and publish custom components that are not available from the Constellation installation.
