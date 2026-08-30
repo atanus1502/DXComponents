@@ -1,0 +1,8 @@
+{
+  "fields": {
+    "Date": "Date",
+    "Description" : "Description",
+    "Performed by" : "Performed by",
+    "Loading case history" : "Loading case history"
+  }
+}

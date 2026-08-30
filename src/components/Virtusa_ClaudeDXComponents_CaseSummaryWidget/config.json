@@ -1,0 +1,47 @@
+{
+  "name": "Virtusa_ClaudeDXComponents_CaseSummaryWidget",
+  "label": "Case Summary",
+  "description": "Displays case summary — case ID, status, customer name, last updated",
+  "organization": "Virtusa",
+  "version": "0.0.1",
+  "library": "ClaudeDXComponents",
+  "componentKey": "Virtusa_ClaudeDXComponents_CaseSummaryWidget",
+  "type": "Widget",
+  "subtype": "CASE",
+  "subtypeLabel": "CASE",
+  "icon": "OneColumnPage.svg",
+  "properties": [
+   {
+      "name": "label",
+      "label": "Label value",
+      "format": "TEXT"
+    },
+    {
+      "name": "caseID",
+      "label": "Case ID",
+      "format": "PROPERTY"
+    },
+    {
+      "name": "status",
+      "label": "Status",
+      "format": "PROPERTY"
+    },
+    {
+      "name": "customerName",
+      "label": "Customer name",
+      "format": "PROPERTY"
+    },
+    {
+      "name": "lastUpdated",
+      "label": "Last updated",
+      "format": "PROPERTY"
+    }
+  ],
+  "defaultConfig": {
+     "label": "@L Case Summary",
+     "caseID": "",
+     "status": "",
+     "customerName": "",
+     "lastUpdated": ""
+  }
+}
