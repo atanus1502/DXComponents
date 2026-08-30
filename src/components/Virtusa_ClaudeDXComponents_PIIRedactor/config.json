@@ -1,0 +1,77 @@
+{
+  "name": "Virtusa_ClaudeDXComponents_PIIRedactor",
+  "label": "PII Redactor",
+  "description": "Displays a redacted view of sensitive PII values (card number, SSN, phone, email) with configurable presets",
+  "organization": "Virtusa",
+  "version": "0.0.1",
+  "library": "ClaudeDXComponents",
+  "componentKey": "Virtusa_ClaudeDXComponents_PIIRedactor",
+  "type": "Field",
+  "subtype": "Text",
+  "subtypeLabel": "Text",
+  "properties": [
+    {
+      "name": "label",
+      "label": "Label value",
+      "format": "TEXT"
+    },
+    {
+      "name": "placeholder",
+      "label": "Placeholder",
+      "format": "TEXT"
+    },
+    {
+      "name": "preset",
+      "label": "PII preset",
+      "format": "SELECT",
+      "defaultValue": "Generic",
+      "source": [
+        { "key": "Card Number", "value": "Card Number" },
+        { "key": "SSN", "value": "SSN" },
+        { "key": "Phone", "value": "Phone" },
+        { "key": "Email", "value": "Email" },
+        { "key": "Generic", "value": "Generic" }
+      ]
+    },
+    {
+      "name": "visibleChars",
+      "label": "Visible trailing characters (Generic preset only)",
+      "format": "NUMBER",
+      "defaultValue": 4
+    },
+    {
+      "name": "visibility",
+      "label": "Visible",
+      "format": "VISIBILITY"
+    },
+    {
+      "name": "disabled",
+      "label": "Disabled",
+      "format": "DISABLED"
+    },
+    {
+      "name": "required",
+      "label": "Required",
+      "format": "REQUIRED"
+    },
+    {
+      "label": "Advanced",
+      "format": "GROUP",
+      "collapsible": true,
+      "properties": [
+        {
+          "name": "testId",
+          "label": "Test ID",
+          "format": "TEXT",
+          "ignorePattern": "[^-_\\p{N}\\p{L}]",
+          "includeAnnotations": false
+        }
+      ]
+    }
+  ],
+  "defaultConfig": {
+    "detailFVLItem": true,
+    "isFormWidth" : false,
+    "isContainerWidth" : false
+  }
+}

@@ -49,3 +49,6 @@ Find the latest documentation on using **DX Component Builder** [here](https://d
 
 | Component | Type | Description |
 |-----------|------|-------------|
+| [CaseSummaryWidget](src/components/Virtusa_ClaudeDXComponents_CaseSummaryWidget) | Widget (CASE) | Displays case ID, status, customer name, and last-updated timestamp |
+| [PIIRedactor](src/components/Virtusa_ClaudeDXComponents_PIIRedactor) | Field (Text) | Redacted display of card numbers, SSNs, phone, email, and generic values, with a masked-input edit mode |
+| [SLADeadlineTracker](src/components/Virtusa_ClaudeDXComponents_SLADeadlineTracker) | Widget (PAGE) | Landing-page dashboard of SLA/deadline status across active cases, with click-to-open case links |
